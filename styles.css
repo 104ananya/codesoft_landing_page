@@ -1,0 +1,534 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFF0F5;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 6;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+#hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    text-align: center;
+    color: #fff;
+    font-size: large;
+}
+
+.hero-content {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+#hero.animate .hero-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    /* background-color: #FF4081; */
+    background-color:#FFE5AD;   
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#about {
+    /* background-color: #f9f9f9; */
+    background-color: #FFF0F5;
+    padding: 50px 0;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#classes {
+    padding: 50px 0;
+    background-color: #FFD1DA;
+}
+
+#classes h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.class-card {
+    max-width: 300px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.class-card img {
+    max-width: 100%;
+}
+
+.class-card h3 {
+    margin-top: 15px;
+}
+
+.class-card button {
+    margin-top: 15px;
+    background-color: #F11A7B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+/* Contact form styles */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    /* background-color: #f9f9f9; */
+    border-radius: 8px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #F11A7B;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #982176;
+}
+
+/* Form validation styles */
+.error-message {
+    color: #FF4081;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+
+/* Hero section styles */
+
+
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo{
+   text-align: center;
+}
+
+.footer-logo img {
+    max-width: 50px;
+}
+
+.footer-logo h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    
+}
+
+.footer-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-social li {
+    margin-right: 20px;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Additional styles for a better footer */
+.footer-container {
+    flex-wrap: wrap;
+}
+
+.footer-links,
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    flex-wrap: wrap;
+}
+
+.footer-links li,
+.footer-social li {
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    /* border: 2px solid #fff;
+    border-radius: 50%; */
+    padding: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* .footer-social a:hover {
+    background-color: #fff;
+    color: #333;
+  } */
+
+
+
+/* Scroll-to-top button styles */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #FF4081;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
+
+
+
+/* Gallery section styles */
+#gallery {
+    padding: 50px;
+
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-images img {
+    max-width: 100%;
+}
+
+
+
+/* Testimonials section styles */
+#testimonials {
+    background-color: #FFD1DA;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial-card {
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.testimonial-card img {
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+.testimonial-card blockquote {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-card cite {
+    display: block;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.lightbox .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+/* Schedule section styles */
+#schedule {
+    background-color: #FFF0F5;
+    padding: 50px 0;
+
+}
+
+.schedule-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.schedule-container h2 {
+    text-align: center;
+}
+
+.class-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.class-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.class-time,
+.class-location {
+    color: #888;
+    margin: 0;
+}
+
+
+
+
+/* Instructors section styles */
+#instructors {
+    padding: 50px 0;
+    /* text-align: center; */
+    background-color: #FFD1DA;
+}
+
+.instructors-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.instructor {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.instructor img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.instructor h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.instructor-bio {
+    color: #555;
+}
+
+
+
+
+/* Countdown section styles */
+#countdown {
+    /* background-color: #FFD1DA; */
+    padding: 50px 0;
+    text-align: center;
+    color: #333;
+}
+
+.countdown-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.countdown-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.countdown-value {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.countdown-label {
+    font-size: 14px;
+}
+
+
+
+
+/* FAQ section styles */
+#faq {
+    /* background-color: #f9f9f9; */
+    padding: 50px 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
